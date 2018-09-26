@@ -17,18 +17,21 @@ const respond = (request, response, status, content, type) => {
 //function to show a success status code
 const success = (request, response) => {
   //message to send
+  /*
   const responseType = {
      users: {
         message: 'Success',
     },
   };
+  */
+    
   //send our json with a success status code
-  return respond(request, response, 200, stringJSON, 'application/json');
+  return respond(request, response, 200, 'application/json');
 }; // End of success JSON/XML
 
 
 //function to show a bad request without the correct parameters
-const badRequest = (request, response, params) => {
+const badRequest = (request, response) => {
   //message to send
   const responseJSON = {
     id: 'missingParams',
