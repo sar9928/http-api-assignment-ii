@@ -17,16 +17,12 @@ const respond = (request, response, status, content, type) => {
 //function to show a success status code
 const success = (request, response) => {
   //message to send
-  /*
-  const responseType = {
-     users: {
+  const responseJSON = {
         message: 'Success',
-    },
   };
-  */
     
   //send our json with a success status code
-  return respond(request, response, 200, 'application/json');
+  return respond(request, response, 200, responseJSON, 'application/json');
 }; // End of success JSON/XML
 
 

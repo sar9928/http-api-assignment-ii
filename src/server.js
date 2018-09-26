@@ -1,7 +1,7 @@
 const http = require('http'); //pull in the http server module
 const url = require('url'); //pull in the url module
 //pull in the query string module
-const query = require('querystring'); 
+// NOT USED HERE const query = require('querystring'); 
 //pull in our html response handler file
 const htmlHandler = require('./htmlResponses.js'); 
 //pull in our json response handler file
